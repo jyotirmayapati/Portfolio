@@ -7,7 +7,7 @@ const About = () => {
         About Me
       </Heading>
       <Text fontSize="lg" mb={4}>
-        I'm a passionate Frontend Developer with experience in building
+        I'm a passionate Fullstack Developer with experience in building
         responsive and accessible web applications using modern web technologies.
       </Text>
       <Stack

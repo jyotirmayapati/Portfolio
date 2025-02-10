@@ -16,7 +16,7 @@ const Footer = () => {
                 </Link>
             </Flex>
             <Text color="white" textAlign="center" mt={4}>
-                © {new Date().getFullYear()} Your Name. All rights reserved.
+                © {new Date().getFullYear()} Jyotirmaya Pati. All rights reserved.
             </Text>
         </Box>
     );

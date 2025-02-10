@@ -29,7 +29,7 @@ const Hero = () => {
                 color={useColorModeValue("gray.800", "white")}
                 lineHeight="shorter"
             >
-                Hello, I'm Your Jyotirmaya Pati
+                Hello, I'm Jyotirmaya Pati
             </Heading>
             <Text
                 fontSize={textSize}
@@ -38,7 +38,7 @@ const Hero = () => {
                 maxW="md"
                 mx="auto"
             >
-                A Frontend Developer & Designer. Crafting beautiful and responsive web experiences.
+                A Fullstack Developer & Designer. Crafting beautiful and responsive web experiences.
             </Text>
         </MotionBox>
     );
