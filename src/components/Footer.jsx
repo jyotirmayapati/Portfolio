@@ -1,25 +1,29 @@
-import { Box, Text, Link, Flex } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 
 const Footer = () => {
-    return (
-        <Box bg="brand.500" py={6} mt={20}>
-            <Flex justifyContent="center" alignItems="center">
-                <Link href="https://github.com/yourgithub" isExternal mx={2}>
-                    <FaGithub color="white" size="1.5em" />
-                </Link>
-                <Link href="https://linkedin.com/in/yourlinkedin" isExternal mx={2}>
-                    <FaLinkedin color="white" size="1.5em" />
-                </Link>
-                <Link href="https://twitter.com/yourtwitter" isExternal mx={2}>
-                    <FaTwitter color="white" size="1.5em" />
-                </Link>
-            </Flex>
-            <Text color="white" textAlign="center" mt={4}>
-                © {new Date().getFullYear()} Jyotirmaya Pati. All rights reserved.
-            </Text>
-        </Box>
-    );
+  const borderColor = useColorModeValue("#e8e4de", "#141414");
+  const textLeft = useColorModeValue("#c0bcb8", "#333");
+  const textRight = useColorModeValue("#d8d5cf", "#282828");
+
+  return (
+    <Box borderTop="1px solid" borderColor={borderColor} py={7} px={{ base: 6, md: 10 }}>
+      <Flex
+        maxW="1280px"
+        mx="auto"
+        justify="space-between"
+        align="center"
+        direction={{ base: "column", md: "row" }}
+        gap={3}
+      >
+        <Text fontFamily="'JetBrains Mono', monospace" fontSize="10px" letterSpacing="0.15em" color={textLeft}>
+          © 2026 Jyotirmaya Pati
+        </Text>
+        <Text fontFamily="'JetBrains Mono', monospace" fontSize="10px" letterSpacing="0.15em" color={textRight}>
+          Designed &amp; built with precision
+        </Text>
+      </Flex>
+    </Box>
+  );
 };
 
 export default Footer;

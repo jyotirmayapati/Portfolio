@@ -2,20 +2,20 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   config: {
-    initialColorMode: "light", // Set your preferred initial color mode
+    initialColorMode: "dark",
     useSystemColorMode: false,
   },
-  colors: {
-    brand: {
-      500: "#6a11cb", // Light mode color
-      700: "#2c3e50", // Dark mode color
-    },
+  fonts: {
+    heading: "'Playfair Display', Georgia, serif",
+    body: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+    mono: "'JetBrains Mono', 'Fira Code', monospace",
   },
   styles: {
     global: (props) => ({
       body: {
-        bg: props.colorMode === "dark" ? "gray.800" : "white",
-        color: props.colorMode === "dark" ? "whiteAlpha.900" : "gray.800",
+        bg: props.colorMode === "dark" ? "#0a0a0a" : "#f8f7f4",
+        color: props.colorMode === "dark" ? "#e8e8e8" : "#0c0c0c",
+        transition: "background 0.3s ease, color 0.3s ease",
       },
     }),
   },
